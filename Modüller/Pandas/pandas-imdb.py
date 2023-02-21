@@ -34,8 +34,8 @@ result = df[["Title","imdbRating"]][df["imdbRating"] >= 8.0].head(50)
 result = df[(df["Year"]>=2014) & (df["Year"]<2016)][["Title","Year","imdbRating"]]
 # Değerlendirme  100k dan büyük olan yada imdb 8 ile 9 arası
 # result = df[(([df["imdbVotes"]>100000]) | (([df["imdbRating"] >=8]) & ([df["imdbRating"]<=9]))) ]
-result = type((df["imdbVotes"]))
-
+df["imdbVotes"].apply(int) 
+result = df[df["imdbVotes"]>100000]
 #
 
 
