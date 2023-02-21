@@ -1,0 +1,5 @@
+ahmet can:39,50,12
+selami can:50,61,95
+hürkan agar:80,69,90
+100 can:100,100,89
+Çınar Turna:199,43,35
