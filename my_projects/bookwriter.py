@@ -6,8 +6,8 @@ import json
 class Chatbot :
 
     openai.organization = "org-Yj4ad5DTjY2lJ33mWITLHsUr"
-    openai.api_key = "YOUR-API-KEY"
-    # openai.FineTune.create(id="cmpl-6lQi3AckW8rrPcmPKBlTmasrKsdbh")
+    openai.api_key = "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"
+    openai.FineTune.create(id="cmpl-6lQi3AckW8rrPcmPKBlTmasrKsdbh")
     
 
     def __init__(self,question):
@@ -21,7 +21,7 @@ class Chatbot :
         
         if prompt == "9" :
             self.Continue = False
-        
+        openai.FineTune.create(id="cmpl-6lyIB2pd1l2sqT9avgb2Lamk5oGkR")
         response = openai.Completion.create(
             model="text-davinci-003",
             prompt=prompt,
